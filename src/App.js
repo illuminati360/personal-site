@@ -12,9 +12,9 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Resume = lazy(() => import('./pages/Resume'));
-const Stats = lazy(() => import('./pages/Stats'));
+const Mres = lazy(() => import('./pages/Mres'));
+const Worlds = lazy(() => import('./pages/Worlds'));
+const Kits = lazy(() => import('./pages/Kits'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -22,10 +22,10 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Index} />
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/stats" component={Stats} />
+        <Route path="/mres" component={Mres} />
+        <Route path="/worlds" component={Worlds} />
+        <Route path="/kits" component={Kits} />
         <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
         <Route component={NotFound} status={404} />
       </Switch>
     </Suspense>

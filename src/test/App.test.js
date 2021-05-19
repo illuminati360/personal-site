@@ -12,7 +12,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Index from '../pages/Index';
 import NotFound from '../pages/NotFound';
-import Projects from '../pages/Projects';
+import MREs from '../pages/Mres';
 import Resume from '../pages/Resume';
 import Stats from '../pages/Stats';
 
@@ -28,9 +28,9 @@ const pages = [
     component: About,
   },
   {
-    route: '/projects',
-    heading: 'Projects',
-    component: Projects,
+    route: '/mres',
+    heading: 'MREs',
+    component: MREs,
   },
   {
     route: '/stats',

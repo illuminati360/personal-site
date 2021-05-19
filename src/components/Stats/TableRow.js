@@ -5,8 +5,8 @@ const TableRow = ({
   label, link, value, format,
 }) => (
   <tr>
-    <td width="70%">{label}</td>
-    <td>{link ? <a href={link}>{format(value)}</a> : format(value)}</td>
+    <td>{link ? <a href={link}>{format(label)}</a> : format(label)}</td>
+    <td><code>{format(value)}</code></td>
   </tr>
 );
 

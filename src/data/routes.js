@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'luminosity_altvr',
     path: '/',
   },
   {
@@ -9,16 +9,16 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: 'MREs',
+    path: '/mres',
   },
   {
-    label: 'Projects',
-    path: '/projects',
+    label: 'Worlds',
+    path: '/worlds',
   },
   {
-    label: 'Stats',
-    path: '/stats',
+    label: 'Kits',
+    path: '/kits',
   },
   {
     label: 'Contact',
