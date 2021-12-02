@@ -8,7 +8,7 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 
 const data = [
   {
-    link: 'https://discord.gg/5Nc3K2DN',
+    link: 'http://discordapp.com/users/508212993574567958',
     label: 'Discord',
     icon: faDiscord,
   },

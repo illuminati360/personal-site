@@ -18,9 +18,9 @@ const Index = () => (
         </div>
       </header>
       <p> Hi, this is Luminosity@AltspaceVR,
-        check out my <Link to="/mre">MREs</Link>,
-        <Link to="/world">worlds</Link>, {' '}
-        <Link to="/kit">kits</Link>, {' '}
+        check out my <Link to="/mres">MREs</Link>,
+        <Link to="/worlds">worlds</Link>, {' '}
+        <Link to="/kits">kits</Link>, {' '}
         or <Link to="/contact">contact</Link> me.
       </p>
     </article>

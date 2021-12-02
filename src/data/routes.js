@@ -21,6 +21,10 @@ const routes = [
     path: '/kits',
   },
   {
+    label: 'Creators',
+    path: '/creators',
+  },
+  {
     label: 'Contact',
     path: '/contact',
   },
