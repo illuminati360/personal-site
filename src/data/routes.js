@@ -28,6 +28,10 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
+  {
+    label: 'ContentPack',
+    path: '/config',
+  },
 ];
 
 export default routes;

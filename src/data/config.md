@@ -1,0 +1,11 @@
+# How to Use the TV Content Pack Generator
+- You need to fill in all three parts of the form below:
+  - Part I: Custom TV Set
+    - A TV set consists of three subparts: TV, remote and chair. 
+    - The transform and artifactId of each part are customizable.
+    - An example TV set is given. To add more TV sets, click the `Add Item` button.
+  - Part II: Custom Channels
+    - An example channel is given.
+    - To add more channels, click the `Add Item` button.
+  - Part III: Custom Password
+    - password for restricted channels (`XXX` category)

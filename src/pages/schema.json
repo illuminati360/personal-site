@@ -1,0 +1,295 @@
+{
+	"type": "object",
+	"title": "TV Content Pack Generator",
+	"description": "Create a json configuration for your TV MRE",
+	"properties": {
+	    "tvs": {
+		"type": "array",
+		"title": "Part I. Custom TV Sets",
+		"items": {
+		    "type": "object",
+		    "properties": {
+			"name": {
+			"title": "Name",
+			"type": "string",
+			"description": "Give your custom TV Set a name"
+			},
+			"tv": {
+			    "type": "object",
+			    "title": "1. TV",
+			    "properties": {
+				"resourceId": {
+				    "title": "Artifact ID",
+				    "type": "string"
+				},
+				"transform": {
+				    "title": "Transform",
+				    "type": "object",
+				    "properties": {
+					"position": {
+					    "title": "Position",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"rotation": {
+					    "title": "Rotation",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"scale": {
+					    "title": "Scale",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 1
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 1
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 1
+						}
+					    }
+					}
+				    }
+				}
+			    }
+			},
+			"remote": {
+			    "type": "object",
+			    "title": "2. Remote",
+			    "properties": {
+				"resourceId": {
+				    "title": "Artifact ID",
+				    "type": "string"
+				},
+				"transform": {
+				    "title": "Transform",
+				    "type": "object",
+				    "properties": {
+					"position": {
+					    "title": "Position",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"rotation": {
+					    "title": "Rotation",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"scale": {
+					    "title": "Scale",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 1
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 1
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 1
+						}
+					    }
+					}
+				    }
+				}
+			    }
+			},
+			"chair": {
+			    "type": "object",
+			    "title": "3. Chair",
+			    "properties": {
+				"resourceId": {
+				    "title": "Artifact ID",
+				    "type": "string"
+				},
+				"transform": {
+				    "title": "Transform",
+				    "type": "object",
+				    "properties": {
+					"position": {
+					    "title": "Position",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"rotation": {
+					    "title": "Rotation",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 0
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 0
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 0
+						}
+					    }
+					},
+					"scale": {
+					    "title": "Scale",
+					    "type": "object",
+					    "properties": {
+						"x": {
+						    "title": "x",
+						    "type": "number",
+						    "default": 1
+						},
+						"y": {
+						    "title": "y",
+						    "type": "number",
+						    "default": 1
+						},
+						"z": {
+						    "title": "z",
+						    "type": "number",
+						    "default": 1
+						}
+					    }
+					}
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	    },
+	    "channels": {
+		"type": "array",
+		"title": "Part II. Custom Channels",
+		"items": {
+		    "type": "object",
+		    "properties": {
+			"name": {
+			    "type": "string",
+			    "title": "Channel Name"
+			},
+			"url": {
+			    "type": "string",
+			    "title": "Channel URL"
+			},
+			"countries": {
+			    "type": "string",
+			    "title": "Countries",
+			    "description": "Country codes delimited by comma"
+			},
+			"categories": {
+			    "type": "string",
+			    "title": "Categories",
+			    "description": "Categories names delimited by comma"
+			}
+		    }
+		}
+	    },
+	    "password": {
+		"type": "object",
+		"title": "Part III. Custom Password",
+		"properties": {
+			"password": {
+				"type": "string",
+				"title": "password"
+			}
+		}
+	    }
+	}
+    }

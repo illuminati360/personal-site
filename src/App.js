@@ -19,6 +19,7 @@ const Kits = lazy(() => import('./pages/Kits'));
 const Creators = lazy(() => import('./pages/Creators'));
 const Audio = lazy(() => import('./pages/Audio'));
 const Mic = lazy(() => import('./pages/Mic'));
+const ContentPack = lazy(() => import('./pages/ContentPack'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/contact" component={Contact} />
         <Route path="/audio" component={Audio} />
         <Route path="/mic" component={Mic} />
+        <Route path="/config" component={ContentPack} />
         <Route component={NotFound} status={404} />
       </Switch>
     </Suspense>

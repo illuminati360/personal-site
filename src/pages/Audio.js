@@ -168,6 +168,7 @@ class Audio extends React.Component {
           width: canvas.width,
           height: height / 2,
           value: bars[i].value[0],
+          energy: this.audio.getEnergy('bass'),
         },
         ctx,
       );
@@ -177,6 +178,7 @@ class Audio extends React.Component {
           width: canvas.width,
           height: height / 2,
           value: bars[i].value[1],
+          energy: this.audio.getEnergy('bass'),
         },
         ctx,
       );
@@ -189,6 +191,7 @@ class Audio extends React.Component {
       width,
       height,
       value,
+      energy,
     } = opts;
 
     // draw the bar
@@ -198,10 +201,36 @@ class Audio extends React.Component {
     ctx.lineWidth = height;
     ctx.beginPath();
     ctx.moveTo(0, y);
-    ctx.lineTo(width, y);
+    ctx.lineTo(width/3, y);
     ctx.moveTo(0, y);
-    ctx.lineTo(width, y);
+    ctx.lineTo(width/3, y);
     ctx.moveTo(0, y);
+    ctx.lineTo(width/3, y);
+    ctx.stroke();
+
+    const fft = `rgb(${value*255},${value*255},${value*255})`;
+    ctx.strokeStyle = fft;
+    ctx.fillStyle = fft;
+    ctx.lineWidth = height;
+    ctx.beginPath();
+    ctx.moveTo(width/3*1, y);
+    ctx.lineTo(width/3*2, y);
+    ctx.moveTo(width/3*1, y);
+    ctx.lineTo(width/3*2, y);
+    ctx.moveTo(width/3*1, y);
+    ctx.lineTo(width/3*2, y);
+    ctx.stroke();
+
+    const bass = `rgb(${energy*255},${energy*255},${energy*255})`;
+    ctx.strokeStyle = bass;
+    ctx.fillStyle = bass;
+    ctx.lineWidth = height;
+    ctx.beginPath();
+    ctx.moveTo(width/3*2, y);
+    ctx.lineTo(width, y);
+    ctx.moveTo(width/3*2, y);
+    ctx.lineTo(width, y);
+    ctx.moveTo(width/3*2, y);
     ctx.lineTo(width, y);
     ctx.stroke();
   };
